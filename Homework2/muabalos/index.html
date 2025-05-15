@@ -1,0 +1,59 @@
+<!doctype html>
+<html style="width:100%;height:100%;">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<title>D3 Example</title>
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+	 <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script> <!-- Allows me to create a Sankey Diagram -->
+	<script src="main.js"></script>
+</head>
+<body style="width:100%;height:100%;margin: 0; background-color: #f0f0f0;">
+	<!-- <svg width="100%" height="100%">
+
+	</svg> -->
+	<!-- <p id="status">Loading...</p>
+	<p> hello</p> -->
+	<div style="text-align: center; padding: 20px; background-color: #1a237e; color: white;">
+	  <h1>GLOBAL TERRORISM DASHBOARD</h1>
+	</div>
+	<!-- Title Strip -->
+	<div id="dashboard" 
+	     style="display: flex; 
+	            flex-wrap: wrap; 
+	            justify-content: space-around; 
+	            padding: 20px;">
+	<!-- Add separate background for charts 3x -->
+	  <div id="bar-chart" 
+	       style="width: 800px;
+	              height: 500px; 
+	              background: white; 
+	              padding: 10px; 
+	              border-radius: 8px; 
+	              box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+	  </div>
+
+	  <div id="scatter-plot" 
+	       style="width: 600px; 
+	              height: 400px; 
+	              background: white; 
+	              padding: 10px; 
+	              border-radius: 8px; 
+	              box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	              margin-top: 20px;">
+	  </div>
+
+	  <div id="sankey-diagram" 
+	       style="width: 80%; 
+	              height: 600px; 
+	              background: white; 
+	              padding: 10px; 
+	              border-radius: 8px; 
+	              box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+	              overflow-x: auto;
+	              margin-top: 20px;">
+	  </div>
+
+	</div>
+</body>
+</html>
